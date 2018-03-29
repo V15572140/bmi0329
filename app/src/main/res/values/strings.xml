@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">0329</string>
+    <string name="cal_bmi">CAL BMI</string>
+    <string name="help">HELP</string>
+    <string name="height">height</string>
+    <string name="weight">weight</string>
+</resources>
