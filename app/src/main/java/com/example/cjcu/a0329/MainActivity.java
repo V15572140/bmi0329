@@ -1,6 +1,7 @@
 package com.example.cjcu.bmi;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.cjcu.a0329.R;
+import com.example.cjcu.a0329.ResultActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -60,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton("OK",null)
                 .setNegativeButton("CANCEL",null)
                 .show();
+
+        Intent intent = new Intent(this, ResultActivity.class);
+        intent.putExtra("EX_BMI",bmi);
+        startActivity(intent);
 
 
 
